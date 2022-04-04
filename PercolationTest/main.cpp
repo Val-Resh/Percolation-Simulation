@@ -21,9 +21,10 @@ int main(int agrc, char* agrv[])
 		std::cout << "95% Confidence Interval = [" << confidence.first << ", " << confidence.second << "]" << std::endl;
 	}
 
-	std::atexit([] {
+	/*std::atexit([] {
 		_CrtDumpMemoryLeaks();
 		});
+		*/
 }
 
 
