@@ -11,16 +11,16 @@ The command to run depends on the OS you use. For windows, it is `PercolationTes
 The first value indicates the size of the network. Input 100 generates a network of 10_000 nodes.     
 The second value is for the number of trials to run. Input 20 indicates that 20 simulations will be run before results are calculated.
 
-
-
+Here's an example of the results after running the program.     
+![results](https://user-images.githubusercontent.com/80176765/162077623-489326d4-eca6-439a-b856-43e500425306.png)
 
 
 # Model
 Percolation theory is applied in practice in various fields. For example, given a composite systems comprised of randomly distributed insulating and metallic materials: what fraction of the materials need to be metallic so that the composite system is an electrical conductor?     
 However, this program uses an abstract model, rather than a specific one. Yet, it could be interpreted as per requirements. 
 
-The model can be seen below:     
-![image](https://user-images.githubusercontent.com/80176765/162069098-bc008034-6593-42b2-ab51-980faa4dc1a2.png)
+This is a model example:            
+![model_example](https://user-images.githubusercontent.com/80176765/162069098-bc008034-6593-42b2-ab51-980faa4dc1a2.png)
 
 
 **HAVE TO FINISH WRITING LATER**
