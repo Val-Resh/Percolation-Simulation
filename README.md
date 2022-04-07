@@ -19,8 +19,17 @@ Here's an example of the results after running the program.
 Percolation theory is applied in practice in various fields. For example, given a composite systems comprised of randomly distributed insulating and metallic materials: what fraction of the materials need to be metallic so that the composite system is an electrical conductor?     
 However, this program uses an abstract model, rather than a specific one. Yet, it could be interpreted as per requirements. 
 
-This is a model example:            
-![model_example](https://user-images.githubusercontent.com/80176765/162069098-bc008034-6593-42b2-ab51-980faa4dc1a2.png)
+This is a model example:           
+![model_example](https://user-images.githubusercontent.com/80176765/162069098-bc008034-6593-42b2-ab51-980faa4dc1a2.png)    
+The white/blue cells are open sites. The blue cells are the ones connected to the top. Percolation occurs when the top site connects to the bottom. 
 
 
-**HAVE TO FINISH WRITING LATER**
+# Calculation
+
+To estimate the percolation threshold = `Os/S` where `Os` is the open sites and `S` is the total size.    
+Multiple threads are used to run various simulations at the same time concurrently.   
+Then mean is calculated as ![mean](https://user-images.githubusercontent.com/80176765/162213652-dadbcf96-894e-4012-a669-edea10bdf92c.png) where `T` is the number of trials/simulations ran.     
+The standard deviation is calculated as ![deviation](https://user-images.githubusercontent.com/80176765/162216912-f8709dbd-3795-41ad-a3b9-5a07a057be0c.jpg) where `Xi` is the result of each simulation, the `x̄` is the mean value and the `T` is the number of simulations. 
+Finally, the 95% confidence interval is calculated as ![confidence](https://user-images.githubusercontent.com/80176765/162218021-2c002ba0-c6c3-4960-9bd2-6bd1a3007c0f.jpg) where `z` is a constant value of 1.96, `s` is the standard deviation, and `T` the total size of simulations and `x̄` the mean value.      
+For accuracy, at least 50 simulations are required to be run. 
+
