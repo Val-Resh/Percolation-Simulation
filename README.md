@@ -12,7 +12,7 @@ The first value indicates the size of the network. Input 100 generates a network
 The second value is for the number of trials to run. Input 20 indicates that 20 simulations will be run before results are calculated.
 
 Here's an example of the results after running the program.     
-![results](https://user-images.githubusercontent.com/80176765/162077623-489326d4-eca6-439a-b856-43e500425306.png)
+![results](https://user-images.githubusercontent.com/80176765/162432929-cedb79e7-6ce5-4f66-b298-3945c7cd653f.png)
 
 
 # Model
