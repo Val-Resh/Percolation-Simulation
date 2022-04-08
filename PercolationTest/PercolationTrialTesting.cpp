@@ -102,7 +102,7 @@ std::pair<double, double> PercolationTrialTesting::confidenceInterval()
 {
 	double confidence = ((1.96 * this->standardDeviation()) / std::sqrt(this->numberOfTrials));
 	double high = this->resultsMeanValue() + confidence;
-	double low = this->resultsMeanValue() + confidence;
+	double low = this->resultsMeanValue() - confidence;
 
 	return std::make_pair(low, high);
 }
